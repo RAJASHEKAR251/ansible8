@@ -1,0 +1,11 @@
+---
+- hosts: webserver
+  become: yes
+  vars:
+    myvar: [raj, shekar, rajashekar]
+  tasks:
+  - name: display myvar
+    debug:
+      msg: "{{ item }}"
+    with_items:
+      - "{{ myvar }}"
