@@ -1,0 +1,13 @@
+---
+- hosts: webserver
+  become: yes
+  vars:
+    myvar:
+      - raj
+      - shekar
+      - rajashekar
+  tasks:
+  - name: dispaly myvar
+    debug:
+      msg: "{{myvar}}"
+      
