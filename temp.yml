@@ -14,5 +14,5 @@
 
   - name: i want to copy index file into all nodes
     template:
-      src: index.j2
+      src: index1.j2
       dest: /var/www/html/index.html
