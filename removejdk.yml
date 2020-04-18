@@ -4,6 +4,6 @@
   tasks:
   - name: remove jdk8 on amazonlinux2 node2
     yum:
-     name: jdk8
-     state: removed
+     name: java
+     state: absent
 
