@@ -4,6 +4,6 @@
   tasks:
   - name: remove jdk8 on amazonlinux2 node2
     yum:
-     name: java
+     name: java-1.8.0-openjdk
      state: absent
 
