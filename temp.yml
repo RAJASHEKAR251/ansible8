@@ -3,6 +3,6 @@
   become: yes
   tasks:
   - name: i want to copy index file into all nodes
-    template:
-      src: index2.j2
+    copy:
+      src: index3.j2
       dest: /var/www/html/index.html
