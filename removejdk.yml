@@ -1,0 +1,9 @@
+---
+- hosts: amazonos
+  become: yes
+  tasks:
+  - name: remove jdk8 on amazonlinux2 node2
+    yum:
+     name: java-1.8.0-openjdk
+     state: absent
+    when: ansible_os_family == "RedHat"
