@@ -1,3 +1,4 @@
+handlers:
 - name: starttomcat
   service:
    name: tomcat
