@@ -2,10 +2,8 @@
   template:
     src: t1.j2
     dest: /usr/share/tomcat/conf/tomcat.conf
-  notify: starttomcat
 
-  handlers:
-  - name: starttomcat
-    service:
-      name: tomcat
-      state: started
+- name: starttomcat
+  service:
+    name: tomcat
+    state: started
