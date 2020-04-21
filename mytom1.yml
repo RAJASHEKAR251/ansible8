@@ -2,13 +2,11 @@
 - hosts: appserver
   become: yes
   tasks:
-  - include_tasks:
-    - 1.yml
-    - 2.yml
-    - 3.yml
-    - 4.yml
-    - t1.yml
-    - t2.yml
-    - h1.yml
-    
+  - include_tasks: 1.yml
+  - include_tasks: 2.yml
+  - include_tasks: 3.yml
+  - include_tasks: 4.yml
+  - include_tasks: t1.yml
+  - include_tasks: t2.yml
+  - include_tasks: h1.yml
     
