@@ -10,12 +10,11 @@
   - include_tasks: t2.j2
   handlers:
    - name: starttomcat
-  service:
-   name: tomcat
-   state: started
-
-- name: restarttomcat
-  service:
-   name: tomcat
-   state: restarted
+     service:
+       name: tomcat
+       state: started
+   - name: restarttomcat
+     service:
+       name: tomcat
+       state: restarted
     
