@@ -8,5 +8,14 @@
   - include_tasks: 4.yml
   - include_tasks: t1.j2
   - include_tasks: t2.j2
-  - include_tasks: h1.yml
+  handlers:
+   - name: starttomcat
+  service:
+   name: tomcat
+   state: started
+
+- name: restarttomcat
+  service:
+   name: tomcat
+   state: restarted
     
