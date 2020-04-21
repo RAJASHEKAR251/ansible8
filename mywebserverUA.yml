@@ -1,5 +1,5 @@
 ---
- - hosts: all
+ - hosts: webserver
    become: yes
    tasks:
     - name: install websever(apache2) on ubuntu18 node1
@@ -25,4 +25,3 @@
        name: httpd
        state: started
       when: ansible_os_family == "RedHat"
-      
