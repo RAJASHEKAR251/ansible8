@@ -1,0 +1,14 @@
+---
+- hosts: appserver
+  become: yes
+  tasks:
+  - include_tasks:
+    - 1.yml
+    - 2.yml
+    - 3.yml
+    - 4.yml
+    - t1.yml
+    - t2.yml
+    - h1.yml
+    
+    
