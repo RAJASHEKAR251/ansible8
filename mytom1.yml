@@ -6,17 +6,6 @@
   - include_tasks: 2.yml
   - include_tasks: 3.yml
   - include_tasks: 4.yml
-  
-  handlers:
-  - name: starttomcat
-    service:
-      name: tomcat
-      state: started
-
-  - name: restarttomcat
-    service:
-      name: tomcat
-      state: restarted
 
 
     

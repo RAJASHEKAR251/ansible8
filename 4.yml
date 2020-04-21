@@ -3,3 +3,9 @@
     src: t2.j2
     dest: /usr/share/tomcat/conf/tomcat-users.xml
   notify: restarttomcat
+
+  handlers:
+  - name: restarttomcat
+    service:
+      name: tomcat
+      state: restarted
