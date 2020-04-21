@@ -8,13 +8,13 @@
   - include_tasks: 4.yml
  
   handlers:
-   - name: starttomcat
-     service:
+  - name: starttomcat
+    service:
        name: tomcat
        state: started
  
-   - name: restarttomcat
-     service:
+  - name: restarttomcat
+    service:
        name: tomcat
        state: restarted
 
